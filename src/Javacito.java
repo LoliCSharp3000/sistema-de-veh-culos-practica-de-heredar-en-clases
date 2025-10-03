@@ -16,9 +16,13 @@ public class Javacito {
 
             switch (elec) {
                 case "1":
-                    
-                    
+                    marca = JOptionPane.showInputDialog("Dime de que marca es:");
+                    modelo = JOptionPane.showInputDialog("Dime de que modelo es:");
+                    numeroDePuertas = Integer.parseInt(JOptionPane.showInputDialog("Dime cuantas puertas tiene?"));
+                    coche = new Coche(marca, modelo, numeroDePuertas);
                     break;
+                case "2":
+                    //añade una moto
                 default:
                     throw new AssertionError();
             }
